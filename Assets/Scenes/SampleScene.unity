@@ -476,7 +476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501742732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.56, y: -2.09, z: -0.062910885}
+  m_LocalPosition: {x: -4.73, y: -2.11, z: -0.062910885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 260735470}
@@ -806,7 +806,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 8d20e3fb65723114693388b7b8c277c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2de43974f7fc037408f28359ecf7be59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1053,7 +1053,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 8d20e3fb65723114693388b7b8c277c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2de43974f7fc037408f28359ecf7be59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1097,9 +1097,9 @@ MonoBehaviour:
   SlingShooter: {fileID: 1514522669}
   TrailController: {fileID: 975595425}
   Birds:
+  - {fileID: 1905550364}
   - {fileID: 1390932642}
   - {fileID: 501742737}
-  - {fileID: 1905550364}
   Enemies:
   - {fileID: 2086827369}
   - {fileID: 816301177}
@@ -1133,7 +1133,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.17320633, y: 0.8873269}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1144,7 +1144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.25, y: 2.13}
+  m_Size: {x: 5.3244114, y: 5.6793103}
   m_EdgeRadius: 0
 --- !u!1 &1284647559
 GameObject:
@@ -1261,7 +1261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390932637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.39, y: -0.97, z: -0.062910885}
+  m_LocalPosition: {x: -3.58, y: -2.1, z: -0.062910885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 260735470}
@@ -1367,7 +1367,7 @@ MonoBehaviour:
   Parent: {fileID: 0}
   RigidBody: {fileID: 1390932640}
   Collider: {fileID: 1390932639}
-  _boostForce: 700
+  _boostForce: 200
   _hasBoost: 0
 --- !u!1 &1404552316 stripped
 GameObject:
@@ -2185,7 +2185,7 @@ GameObject:
   - component: {fileID: 1905550365}
   - component: {fileID: 1905550364}
   m_Layer: 0
-  m_Name: RedBird (2)
+  m_Name: OwlBird
   m_TagString: Bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2200,12 +2200,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1905550363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70defbdc37343864f842f0b16aca9260, type: 3}
+  m_Script: {fileID: 11500000, guid: e63aab5f473e8e140a3b6b65d1d6681e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Parent: {fileID: 0}
   RigidBody: {fileID: 1905550366}
   Collider: {fileID: 1905550365}
+  blastRadius: 10
+  blastForce: 5
 --- !u!58 &1905550365
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2280,7 +2282,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 8d65fab5aa828d7439359b962c57d921, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d20e3fb65723114693388b7b8c277c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2299,7 +2301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905550363}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.71, y: -2.11, z: -0.062910885}
+  m_LocalPosition: {x: -2.37, y: -0.96, z: -0.062910885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 260735470}
